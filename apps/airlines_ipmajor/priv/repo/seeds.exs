@@ -262,3 +262,17 @@
     "user_id" => "1",
     "flight_id" => "2"
     })
+
+{:ok, _cs} =
+  AirlinesIpmajor.EmployeeContext.create_employee(%{
+    "first_name" => "John",
+    "last_name" => "Doe",
+    "birthdate" => "2000-09-08",
+    })
+
+{:ok, _cs} =
+  AirlinesIpmajor.EmployeeContext.create_employee(%{
+    "first_name" => "Joana",
+    "last_name" => "Doe",
+    "birthdate" => "2000-02-03",
+    })

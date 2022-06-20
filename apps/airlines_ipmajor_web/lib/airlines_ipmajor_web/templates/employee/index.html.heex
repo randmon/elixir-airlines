@@ -1,0 +1,28 @@
+<h1><%= gettext "All Employees"%></h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th><%= gettext "First name"%></th>
+      <th><%= gettext "Last name"%></th>
+      <th><%= gettext "Birthdate"%></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for employee <- @employees do %>
+    <tr>
+      <td><%= employee.first_name %></td>
+      <td><%= employee.last_name %></td>
+      <td><%= employee.birthdate %></td>
+
+      <td>
+        <span><%= link gettext("Manage"), to: Routes.employee_path(@conn, :show, employee) %></span></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<a class="btn btn-primary" href="/admin/employees/new"><i class="fa-solid fa-plus"></i> <%= gettext "New employee"%></a>
+

@@ -1,0 +1,32 @@
+<%= link to: Routes.employee_path(@conn, :index), class: "btn btn-outline-secondary mb-4" do %>
+    <i class="fa-solid fa-angle-left"></i> <%= gettext "Back" %>
+<% end %>
+
+<h1>Show Employee</h1>
+
+<ul>
+
+  <li>
+    <strong>First name:</strong>
+    <%= @employee.first_name %>
+  </li>
+
+  <li>
+    <strong>Last name:</strong>
+    <%= @employee.last_name %>
+  </li>
+
+  <li>
+    <strong>Birthdate:</strong>
+    <%= @employee.birthdate %>
+  </li>
+
+</ul>
+
+<%= link to: Routes.employee_path(@conn, :edit, @employee), class: "btn btn-primary" do %>
+    <i class="fa-solid fa-pencil"></i> <%= gettext "Edit" %>
+<% end %>
+<%= link to: Routes.employee_path(@conn, :delete, @employee), class: "btn btn-danger", 
+    method: :delete, data: [confirm: gettext("Are you sure you want to delete employee number %{number} ?\nThis action cannot be undone!", number: @employee.id)] do %>
+  <i class="fa-solid fa-trash"></i> <%= gettext "Delete" %>
+<% end %>

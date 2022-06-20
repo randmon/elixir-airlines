@@ -70,6 +70,7 @@ defmodule AirlinesIpmajorWeb.Router do
 
     resources "/users", UserController
     resources "/flights", FlightController
+    resources "/employees", EmployeeController
     get "/", PageController, :admin_index
   end
 

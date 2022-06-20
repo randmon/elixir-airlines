@@ -1,0 +1,7 @@
+<%= link to: Routes.employee_path(@conn, :show, @employee), class: "btn btn-outline-secondary mb-4" do %>
+    <i class="fa-solid fa-angle-left"></i> <%= gettext "Back" %>
+<% end %>
+
+<h1><%= gettext "Edit employee"%></h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.employee_path(@conn, :update, @employee)) %>
