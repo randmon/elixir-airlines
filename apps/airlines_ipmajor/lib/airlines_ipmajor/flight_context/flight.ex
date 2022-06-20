@@ -4,6 +4,7 @@ defmodule AirlinesIpmajor.FlightContext.Flight do
   alias AirlinesIpmajor.AirportContext.Airport
   alias AirlinesIpmajor.UserContext.User
   alias AirlinesIpmajor.EmployeeContext.Employee
+  import Ecto.Query, only: [from: 2]
 
   schema "flights" do
     field :departure_date, :date
@@ -32,5 +33,11 @@ defmodule AirlinesIpmajor.FlightContext.Flight do
       true -> add_error(changeset, :departure_airport_id, message)
       false -> changeset
     end
+  end
+
+  def search(query, search_term) do
+    from flight in query,
+    where: like(flight.departure_airport_id, ^search_term),
+    or_where: like(flight.arrival_airport_id, ^search_term)
   end
 end

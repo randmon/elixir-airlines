@@ -1,8 +1,16 @@
 <div class="jumbotron">
-  <h1 class="display-3"><%= gettext "Welcome to %{airline}!", airline: "IPMajorAirlines" %></h1>
-  <hr class="my-4">
-  <p class="lead"><%= gettext "Safe and comfortable travels." %></p>
+  <%# Search form for flights %>
+  <%= form_for @conn, Routes.flight_path(@conn, :upcoming), [method: :get], fn f -> %>
+    <%# <div class="form-group"> %>
+      <%# <i class="fa-solid fa-plane-departure"></i> <%= label f, gettext("Departure airport"), for: "departure_airport" %>
+      <%# <%= select f, :departure_airport_id, Enum.map(@airports, &{&1.name, &1.id, }), id: "departure_airport", class: "form-control" %>
+    <%# </div> %>
+    <%= search_input f, :query %>
+    
+    <button type="submit" class="btn btn-success"><i class="fa-solid fa-search"></i> <%= gettext "Search" %></button>
+  <% end %>
 </div>
+
 <section class="container">
 <h2><%= gettext "Upcoming flights"%></h2>
 <p><%= gettext "Here are the %{count} next flights", count: length(@flights) %></p>

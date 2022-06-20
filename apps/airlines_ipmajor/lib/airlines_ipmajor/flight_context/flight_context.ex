@@ -7,6 +7,15 @@ defmodule AirlinesIpmajor.FlightContext do
 
   def list_flights, do: Repo.all(Flight)
 
+  def list_upcoming(params) do
+    search_term = get_in(params, ["query"])
+    if search_term do
+      Flight |> Flight.search(search_term) |> Repo.all()
+    else
+      Flight |> Repo.all()
+    end
+  end
+
   def get_flight!(id), do: Repo.get!(Flight, id)
   def get_flight(id), do: Repo.get(Flight, id)
 

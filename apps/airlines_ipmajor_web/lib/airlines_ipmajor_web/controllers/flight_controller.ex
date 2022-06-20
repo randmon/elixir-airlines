@@ -80,8 +80,8 @@ defmodule AirlinesIpmajorWeb.FlightController do
     |> redirect(to: Routes.flight_path(conn, :index))
   end
 
-  def upcoming(conn, _params) do
-    flights = FlightContext.list_flights()
+  def upcoming(conn, params) do
+    flights = FlightContext.list_upcoming(params)
     |> FlightContext.preload_flights_airports()
     |> Enum.filter(fn (flight) -> Date.compare(flight.departure_date, Date.utc_today()) == :gt end)
     |> Enum.sort(fn (flight1, flight2) -> Time.compare(flight1.departure_time, flight2.departure_time) == :gt end)
