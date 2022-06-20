@@ -3,6 +3,7 @@ defmodule AirlinesIpmajor.FlightContext.Flight do
   import Ecto.Changeset
   alias AirlinesIpmajor.AirportContext.Airport
   alias AirlinesIpmajor.UserContext.User
+  alias AirlinesIpmajor.EmployeeContext.Employee
 
   schema "flights" do
     field :departure_date, :date
@@ -11,6 +12,7 @@ defmodule AirlinesIpmajor.FlightContext.Flight do
     belongs_to :departure_airport, Airport
     belongs_to :arrival_airport, Airport
     many_to_many :tickets, User, join_through: "tickets"
+    many_to_many :employees, Employee, join_through: "crew_members"
   end
 
   @doc false

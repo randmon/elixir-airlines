@@ -276,3 +276,15 @@
     "last_name" => "Doe",
     "birthdate" => "2000-02-03",
     })
+
+{:ok, _cs} =
+  AirlinesIpmajor.CrewMemberContext.create_crew_member(%{
+    "employee_id" => "1",
+    "flight_id" => "1"
+    })
+
+{:ok, _cs} =
+  AirlinesIpmajor.CrewMemberContext.create_crew_member(%{
+    "employee_id" => "1",
+    "flight_id" => "2"
+    })
