@@ -1,0 +1,37 @@
+<h1><%= gettext "All flights" %></h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th><%= gettext "Number" %></th>
+      <th><%= gettext "From" %></th>
+      <th><%= gettext "To" %></th>
+      <th><%= gettext "Date" %></th>
+      <th><%= gettext "Time" %></th>
+      <th><%= gettext "Price" %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for flight <- @flights do %>
+    <tr>
+      <td><%= flight.id%></td>
+      <td><%= flight.departure_airport.city.name%></td>
+      <td><%= flight.arrival_airport.city.name%></td>
+      
+      <td><%= flight.departure_date %></td>
+      <td><%= flight.departure_time %></td>
+      <td><%= flight.price %> €</td>
+
+      <td>
+        <span><%= link gettext("Manage"), to: Routes.flight_path(@conn, :show, flight) %></span>
+        </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+<%= if @current_user do %><%= if @current_user.role == "Admin" do %>
+  <%= link to: Routes.flight_path(@conn, :new), class: "btn btn-primary" do %>
+    <i class="fa-solid fa-plus"></i> <%= gettext "New flight" %>
+  <% end %>
+<% end %><% end %>

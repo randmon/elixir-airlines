@@ -1,0 +1,41 @@
+<div class="jumbotron">
+  <h1 class="display-3"><%= gettext "Welcome to %{airline}!", airline: "IPMajorAirlines" %></h1>
+  <hr class="my-4">
+  <p class="lead"><%= gettext "Safe and comfortable travels." %></p>
+</div>
+<section class="container">
+<h2><%= gettext "Upcoming flights"%></h2>
+<p><%= gettext "Here are the %{count} next flights", count: length(@flights) %></p>
+
+<%# If flights not empty %>
+<%= if length(@flights) > 0 do %>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th><%= gettext "Number" %></th>
+      <th><%= gettext "From" %></th>
+      <th><%= gettext "To" %></th>
+      <th><%= gettext "Date" %></th>
+      <th><%= gettext "Time" %></th>
+      <th><%= gettext "Price" %></th>      
+    </tr>
+  </thead>
+  <tbody>
+<%= for flight <- @flights do %>
+    <tr>
+      <td><%= flight.id%></td>
+      <td><%= flight.departure_airport.city.name%></td>
+      <td><%= flight.arrival_airport.city.name%></td>
+      <td><%= flight.departure_date %></td>
+      <td><%= flight.departure_time.hour %></td>
+      <td><%= flight.price %> €</td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+<a href="/upcoming-flights" class="btn btn-primary"><%= gettext "All upcoming flights" %></a>
+<% else %>
+<p><%= gettext "There are no upcoming flights" %></p>
+<% end %>
+
+</section>

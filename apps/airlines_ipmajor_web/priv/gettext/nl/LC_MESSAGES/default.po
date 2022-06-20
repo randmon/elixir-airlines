@@ -1,0 +1,514 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: nl\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:38
+#: lib/airlines_ipmajor_web/templates/flight/index.html.heex:9
+#: lib/airlines_ipmajor_web/templates/flight/upcoming_flights.html.heex:9
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:18
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:14
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:50
+msgid "Date"
+msgstr "Datum"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:3
+#: lib/airlines_ipmajor_web/templates/flight/index.html.heex:7
+#: lib/airlines_ipmajor_web/templates/flight/upcoming_flights.html.heex:7
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:16
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:12
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:48
+msgid "From"
+msgstr "Van"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:8
+msgid "Here are the %{count} next flights"
+msgstr "Hier zijn de %{count} volgende vluchten"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:42
+msgid "Here are your %{count} past flights:"
+msgstr "Hier zijn uw %{count} vorige vluchten:"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/index.html.heex:6
+#: lib/airlines_ipmajor_web/templates/flight/upcoming_flights.html.heex:6
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:15
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:11
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:47
+msgid "Number"
+msgstr "Nummer"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:38
+msgid "Past flights"
+msgstr "Vorige vluchten"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:48
+#: lib/airlines_ipmajor_web/templates/flight/form.html.heex:33
+#: lib/airlines_ipmajor_web/templates/flight/index.html.heex:11
+#: lib/airlines_ipmajor_web/templates/flight/upcoming_flights.html.heex:11
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:20
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:16
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:52
+msgid "Price"
+msgstr "Prijs"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:4
+msgid "Safe and comfortable travels."
+msgstr "Veilig en comfortabel reizen."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:43
+#: lib/airlines_ipmajor_web/templates/flight/index.html.heex:10
+#: lib/airlines_ipmajor_web/templates/flight/upcoming_flights.html.heex:10
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:19
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:15
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:51
+msgid "Time"
+msgstr "Tijd"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:19
+#: lib/airlines_ipmajor_web/templates/flight/index.html.heex:8
+#: lib/airlines_ipmajor_web/templates/flight/upcoming_flights.html.heex:8
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:17
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:13
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:49
+msgid "To"
+msgstr "Naar"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:7
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:3
+msgid "Upcoming flights"
+msgstr "Volgende vlucthen"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:2
+msgid "Welcome to %{airline}!"
+msgstr "Welkom bij %{airline}!"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:70
+msgid "You have no past flights"
+msgstr "U heeft geen vorige vluchten"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:6
+msgid "You have purchased %{count} tickets for upcoming flights:"
+msgstr "U heeft %{count} tickets gekocht voor volgende vluchten:"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:34
+msgid "You haven't purchased any tickets for upcoming flights"
+msgstr "U heeft geen tickets gekocht voor volgende vluchten"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/layout/root.html.heex:39
+msgid "Admin area"
+msgstr "Admin area"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/layout/root.html.heex:33
+msgid "Home"
+msgstr "Index"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/layout/root.html.heex:60
+#: lib/airlines_ipmajor_web/templates/session/new.html.eex:1
+msgid "Login"
+msgstr "Inloggen"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/layout/root.html.heex:52
+msgid "Logout"
+msgstr "Uitloggen"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/layout/root.html.heex:54
+msgid "Manage account"
+msgstr "Account beheren"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/layout/root.html.heex:63
+msgid "Register"
+msgstr "Registreren"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/layout/root.html.heex:42
+msgid "User area"
+msgstr "Gebruikers area"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:1
+msgid "My tickets"
+msgstr "Mijn tickets"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:32
+msgid "Note: No refunds are available at this time."
+msgstr "Opmerking: Op dit moment zijn terugbetalingen niet mogelijk."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:38
+msgid "There are no upcoming flights"
+msgstr "Er zijn geen volgende vluchten"
+
+#, elixir-autogen, elixir-format
+#: ticket.html.heex:20
+msgid "Confirm purchase"
+msgstr "Bevestigen"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:81
+msgid "Generate key"
+msgstr "Sleutel genereren"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:78
+msgid "Generate new key"
+msgstr "Nieuwe sleutel genereren"
+
+#, elixir-autogen, elixir-format
+#: form.html.heex:21
+msgid "Must be at least 8 characters long."
+msgstr "Moet minstens 8 karakters lang zijn."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:73
+msgid "My API key"
+msgstr "Mijn API sleutel"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/user/index.html.heex:32
+#: lib/airlines_ipmajor_web/templates/user/new.html.heex:5
+msgid "New user"
+msgstr "Nieuwe gebruiker"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/page/user_area.html.heex:80
+msgid "You don't have an API key yet."
+msgstr "U heeft nog geen API sleutel."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/upcoming_flights.html.heex:32
+msgid "All Flights"
+msgstr "Alle vluchten"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/edit.html.heex:1
+#: lib/airlines_ipmajor_web/templates/flight/new.html.heex:3
+#: lib/airlines_ipmajor_web/templates/flight/show.html.heex:1
+#: lib/airlines_ipmajor_web/templates/flight/show_upcoming.html.heex:1
+#: lib/airlines_ipmajor_web/templates/user/edit.html.heex:2
+#: lib/airlines_ipmajor_web/templates/user/new.html.heex:2
+#: lib/airlines_ipmajor_web/templates/user/register.html.heex:2
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:3
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:7
+msgid "Back"
+msgstr "Terug"
+
+#, elixir-autogen, elixir-format
+#: ticket.html.heex:19
+msgid "Cancel"
+msgstr "Annuleren"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/show.html.heex:11
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:54
+msgid "Delete"
+msgstr "Verwijderen"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:35
+#: lib/airlines_ipmajor_web/templates/flight/upcoming_flights.html.heex:25
+msgid "Details"
+msgstr "Details"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/show.html.heex:6
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:44
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:48
+msgid "Edit"
+msgstr "Bewerken"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/show_upcoming.html.heex:4
+msgid "Purchase ticket"
+msgstr "Ticket kopen"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:136
+msgid "API key generated successfully."
+msgstr "API sleutel succesvol gegenereerd."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:30
+#: lib/airlines_ipmajor_web/templates/flight/form.html.heex:15
+msgid "Arrival airport"
+msgstr "Aankomstluchthaven"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:10
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:26
+msgid "City"
+msgstr "Stad"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:6
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:22
+msgid "Country"
+msgstr "Land"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:14
+#: lib/airlines_ipmajor_web/templates/flight/form.html.heex:9
+msgid "Departure airport"
+msgstr "Vertrekluchthaven"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/flight_info.html.heex:1
+msgid "Flight number"
+msgstr "Vluchtnummer"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/flight/upcoming_flights.html.heex:1
+#: lib/airlines_ipmajor_web/templates/page/index.html.heex:36
+msgid "All upcoming flights"
+msgstr "Alle volgende vluchten"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:141
+msgid "Error generating API key."
+msgstr "Fout bij het genereren van de API sleutel."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:146
+msgid "Please login to generate an API key."
+msgstr "Log in om een API sleutel te genereren."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:60
+msgid "Show user info"
+msgstr "Gebruikersinformatie weergeven"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:23
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:43
+msgid "User created successfully."
+msgstr "Gebruiker succesvol aangemaakt."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:77
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:97
+msgid "User updated successfully."
+msgstr "Gebruiker succesvol bijgewerkt."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:124
+msgid "User with id %{id} has been deleted."
+msgstr "Gebruiker met id %{id} is verwijderd."
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:120
+msgid "Your account has been deleted."
+msgstr "Uw account is verwijderd."
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/controllers/session_controller.ex:32
+msgid "Welcome back, %{username}!"
+msgstr "Welkom terug, %{username}!"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/user_controller.ex:110
+msgid "Unauthorized"
+msgstr "Geen toegang"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/flight/index.html.heex:1
+msgid "All flights"
+msgstr "Alle vluchten"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/show.html.heex:10
+msgid "Are you sure you want to delete flight %{flightid} ?\nThis action cannot be undone!"
+msgstr "Bent u zeker dat u vlucht %{flightid} wilt verwijderen?\nDeze actie kan niet ongedaan worden!"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/edit.html.heex:2
+msgid "Edit flight"
+msgstr "Vlucht bewerken"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/flight/index.html.heex:27
+#: lib/airlines_ipmajor_web/templates/user/index.html.heex:25
+msgid "Manage"
+msgstr "Beheren"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/form.html.heex:43
+#: lib/airlines_ipmajor_web/templates/session/new.html.eex:18
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:48
+#: form.html.heex:45
+msgid "Submit"
+msgstr "Verzenden"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/user/register.html.heex:5
+msgid "Register account"
+msgstr "Account registreren"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/session/new.html.eex:12
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:17
+#: form.html.heex:19
+#: form.html.heex:20
+msgid "password"
+msgstr "wachtwoord"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/session/new.html.eex:6
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:11
+#: form.html.heex:13
+msgid "username"
+msgstr "gebruikersnaam"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/page/admin_area.html.heex:4
+msgid "Manage flights"
+msgstr "Vluchten beheren"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/page/admin_area.html.heex:7
+msgid "Manage users"
+msgstr "Gebruikers beheren"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/page/admin_area.html.heex:1
+msgid "Management"
+msgstr "Beheer"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/flight/index.html.heex:35
+#: lib/airlines_ipmajor_web/templates/flight/new.html.heex:6
+msgid "New flight"
+msgstr "Nieuwe vlucht"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/flight/form.html.heex:21
+msgid "Departure date"
+msgstr "Vertrekdatum"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/flight/form.html.heex:27
+msgid "Departure time"
+msgstr "Vertrektijd"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:4
+#: form.html.heex:5
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr "Oeps, er is iets misgegaan! Controleer de onderstaande fouten."
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/user/edit.html.heex:5
+msgid "Edit user"
+msgstr "Gebruiker bewerken"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:8
+#: form.html.heex:10
+msgid "Account info"
+msgstr "Account info"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:28
+msgid "Personal info"
+msgstr "Persoonlijke info"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:43
+#: form.html.heex:40
+msgid "birthdate"
+msgstr "geboortedatum"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:31
+#: form.html.heex:28
+msgid "first name"
+msgstr "voornaam"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:37
+#: form.html.heex:34
+msgid "last name"
+msgstr "achternaam"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/user/form.html.heex:23
+msgid "role"
+msgstr "rol"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:11
+msgid "User info"
+msgstr "Gebruiker info"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/user/index.html.heex:6
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:16
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/user/index.html.heex:10
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:36
+msgid "Birthdate"
+msgstr "Geboortedatum"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/user/index.html.heex:8
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:26
+msgid "First name"
+msgstr "Voornaam"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/user/index.html.heex:9
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:31
+msgid "Last name"
+msgstr "Achternaam"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/user/index.html.heex:7
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:21
+msgid "Role"
+msgstr "Rol"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/airlines_ipmajor_web/templates/user/show.html.heex:53
+msgid "Are you sure you want to delete user %{username} ?\nThis action cannot be undone!"
+msgstr "Bent u zeker dat u gebruiker %{username} wilt verwijderen?\nDeze actie kan niet ongedaan worden!"
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/error_controller.ex:9
+msgid "Page not found"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/airlines_ipmajor_web/controllers/error_controller.ex:9
+msgid "The page you requested was not found."
+msgstr ""

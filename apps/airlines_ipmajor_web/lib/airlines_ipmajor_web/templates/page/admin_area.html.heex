@@ -1,0 +1,9 @@
+<h1><%= gettext "Management" %></h1>
+<div class="list-group">
+  <a class="list-group-item list-group-item-action" href={Routes.flight_path(@conn, :index)}>
+    <i class="fa-solid fa-plane-up"></i> <%= gettext "Manage flights" %>
+  </a>
+  <a class="list-group-item list-group-item-action" href={Routes.user_path(@conn, :index)}>
+    <i class="fa-solid fa-users"></i> <%= gettext "Manage users" %>
+  </a>
+</div>

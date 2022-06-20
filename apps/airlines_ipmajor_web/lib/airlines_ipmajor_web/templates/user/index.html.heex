@@ -1,0 +1,36 @@
+<h1>All Users</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th><%= gettext "Username"%></th>
+      <th><%= gettext "Email"%></th>
+      <th><%= gettext "Role"%></th>
+      <th><%= gettext "First name"%></th>
+      <th><%= gettext "Last name"%></th>
+      <th><%= gettext "Birthdate"%></th>
+      <th><%= gettext "Country"%></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for user <- @users do %>
+    <tr>
+      <td><%= user.username %></td>
+      <td><%= user.email %></td>
+      <td><%= user.role %></td>
+      <td><%= user.first_name %></td>
+      <td><%= user.last_name %></td>
+      <td><%= user.birthdate %></td>
+      <td><%= user.country.name %></td>
+
+      <td>
+        <%= link gettext("Manage"), to: Routes.user_path(@conn, :show, user) %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<a class="btn btn-primary" href="/admin/users/new"><i class="fa-solid fa-plus"></i> <%= gettext "New user"%></a>

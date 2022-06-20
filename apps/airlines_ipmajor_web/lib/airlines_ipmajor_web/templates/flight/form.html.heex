@@ -1,0 +1,44 @@
+<.form let={f} for={@changeset} action={@action}>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <i class="fa-solid fa-plane-departure"></i> <%= label f, gettext("Departure airport"), for: "departure_airport" %>
+    <%= select f, :departure_airport_id, Enum.map(@airports, &{&1.name, &1.id, }), id: "departure_airport", class: "form-control" %>
+    <%= error_tag f, :departure_airport_id %>
+  </div>
+
+  <div class="form-group">
+  <i class="fa-solid fa-plane-arrival"></i> <%= label f, gettext("Arrival airport"), for: "arrival_airport" %>
+  <%= select f, :arrival_airport_id, Enum.map(@airports, &{&1.name, &1.id}), id: "arrival_airport", class: "form-control"%>
+  <%= error_tag f, :arrival_airport_id %>
+  </div>
+
+  <div class="form-group">
+  <i class="fa-solid fa-calendar"></i> <%= label f, gettext("Departure date") %>
+  <%= date_select f, :departure_date, year: [options: 2022..2032] %>
+  <%= error_tag f, :departure_date %>
+  </div>
+
+  <div class="form-group">
+  <i class="fa-solid fa-clock"></i> <%= label f, gettext("Departure time") %>
+  <%= time_select f, :departure_time %>
+  <%= error_tag f, :departure_time %>
+  </div>
+
+  <div class="form-group">
+  <i class="fa-solid fa-coins"></i> <%= label f, gettext("Price") %>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">€</span>
+    </div>
+    <%= number_input f, :price, step: "0.01", class: "form-control" %>
+  </div>
+  <%= error_tag f, :price %>
+  </div>
+
+  <button type="submit" class="btn btn-success"><%= gettext "Submit" %></button>
+</.form>

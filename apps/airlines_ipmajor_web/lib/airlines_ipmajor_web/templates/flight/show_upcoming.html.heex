@@ -1,0 +1,5 @@
+<a href="/upcoming-flights" class="btn btn-outline-secondary mb-3"><i class="fa-solid fa-angle-left"></i> <%= gettext "Back"%></a>
+<%= render "flight_info.html", Map.put(assigns, :flight, @flight) %>
+<%= if @current_user do %>
+<%= link gettext("Purchase ticket"), to: Routes.flight_path(@conn, :purchase_ticket, @flight), class: "btn btn-primary" %>
+<% end %>

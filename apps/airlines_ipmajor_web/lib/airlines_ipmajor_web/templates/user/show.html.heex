@@ -1,0 +1,65 @@
+<%= if @current_user.role == "Admin" do %>
+  <%= link to: Routes.user_path(@conn, :index), class: "btn btn-outline-secondary mb-4" do %>
+      <i class="fa-solid fa-angle-left"></i> <%= gettext "Back" %>
+  <% end %>
+<% else %>
+  <%= link to: Routes.page_path(@conn, :index), class: "btn btn-outline-secondary mb-4" do %>
+      <i class="fa-solid fa-angle-left"></i> <%= gettext "Back" %>
+  <% end %>
+<% end %>
+
+<h1><%= gettext "User info"%></h1>
+
+<ul>
+
+  <li>
+    <strong><%= gettext "Username"%>:</strong>
+    <%= @user.username %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Email"%>:</strong>
+    <%= @user.email %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Role"%>:</strong>
+    <%= @user.role %>
+  </li>
+
+  <li>
+    <strong><%= gettext "First name"%>:</strong>
+    <%= @user.first_name %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Last name"%>:</strong>
+    <%= @user.last_name %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Birthdate"%>:</strong>
+    <%= @user.birthdate %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Country"%>:</strong>
+    <%= @user.country.name %>
+  </li>
+
+</ul>
+
+<%= if @current_user.role == "Admin" do %>
+  <%= link to: Routes.user_path(@conn, :edit, @user), class: "btn btn-primary" do %>
+    <i class="fa-solid fa-pencil"></i> <%= gettext "Edit" %>
+  <% end %>
+<% else %>
+<%= link to: Routes.user_path(@conn, :edit_registration), class: "btn btn-primary" do %>
+    <i class="fa-solid fa-pencil"></i> <%= gettext "Edit" %>
+  <% end %>
+<% end %>
+
+<%= link to: Routes.user_path(@conn, :delete, @user), class: "btn btn-danger", 
+    method: :delete, data: [confirm: gettext("Are you sure you want to delete user %{username} ?\nThis action cannot be undone!", username: @user.username)] do %>
+  <i class="fa-solid fa-trash"></i> <%= gettext "Delete" %>
+<% end %>

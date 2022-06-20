@@ -1,0 +1,4 @@
+<a class="btn btn-outline-secondary mb-2" href={Routes.flight_path(@conn, :show, @flight)}><i class="fa-solid fa-angle-left"></i> <%= gettext "Back"%></a>
+<h1><%= gettext "Edit flight"%></h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.flight_path(@conn, :update, @flight)) %>

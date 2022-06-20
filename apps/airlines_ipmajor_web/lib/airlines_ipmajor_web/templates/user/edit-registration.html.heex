@@ -1,0 +1,7 @@
+<%= link to: Routes.user_path(@conn, :show, @user), class: "btn btn-outline-secondary mb-4" do %>
+    <i class="fa-solid fa-angle-left"></i> <%= gettext "Back" %>
+<% end %>
+
+<h1><%= gettext "Edit user"%></h1>
+
+<%= render "registration-form.html", Map.put(assigns, :action, Routes.user_path(@conn, :update_registration)) %>

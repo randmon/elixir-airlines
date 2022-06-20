@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <%= live_title_tag assigns[:page_title] || "UCLL", suffix: " · IPMajorAirlines" %>
+    <%# <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/> %>
+    <%# Bootstrap CSS and JS %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <%# Font awesome %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <%# logo %>
+    <link rel="icon" type="image/png" href={Routes.static_path(@conn, "/images/airplane200.png")}/>
+  </head>
+  <body class="bg-light">
+    <div>
+      <nav class="navbar navbar-dark bg-dark mb-3">
+        <a href="/" class="navbar-brand">
+          <img src={Routes.static_path(@conn, "/images/airplane200.png")} width="50" height="50" alt=""/>
+        </a>
+      </nav>
+    </div>
+    
+    <main class="container">
+      <div class="jumbotron">
+        <h1 class="display-3">404 not found</h1>
+        <hr class="my-4">
+        <p class="lead">Sorry, that page does not exist.</p>
+      </div>
+    </main>
+  </body>
+</html>

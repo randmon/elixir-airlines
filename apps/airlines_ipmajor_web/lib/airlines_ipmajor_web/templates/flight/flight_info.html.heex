@@ -1,0 +1,51 @@
+<h1><%= gettext "Flight number" %> <%= @flight.id %></h1>
+
+<h2><%= gettext "From" %></h2>
+<ul> 
+    <li>
+        <strong><%= gettext "Country" %>:</strong>
+        <%= @departure_city.country.name %>
+    </li>
+    <li>
+        <strong><%= gettext "City" %>:</strong>
+        <%= @departure_city.name %>
+    </li>
+    <li>
+        <strong><%= gettext "Departure airport" %>:</strong>
+        <%= @flight.departure_airport.name %>
+    </li>
+</ul>
+
+<h2><%= gettext "To" %></h2>
+<ul>
+    <li>
+        <strong><%= gettext "Country" %>:</strong>
+        <%= @arrival_city.country.name %>
+    </li>
+    <li>
+        <strong><%= gettext "City" %>:</strong>
+        <%= @arrival_city.name %>
+    </li>
+    <li>
+        <strong><%= gettext "Arrival airport" %>:</strong>
+        <%= @flight.arrival_airport.name %>
+    </li>
+</ul>
+
+<h2><%= gettext "Details" %></h2>
+<ul> 
+    <li>
+        <strong><%= gettext "Date" %>:</strong>
+        <%= @flight.departure_date %>
+    </li>
+
+    <li>
+        <strong><%= gettext "Time" %>:</strong>
+        <%= @flight.departure_time %>
+    </li>
+
+    <li>
+        <strong><%= gettext "Price" %>:</strong>
+        <%= @flight.price %> €
+    </li>
+</ul>

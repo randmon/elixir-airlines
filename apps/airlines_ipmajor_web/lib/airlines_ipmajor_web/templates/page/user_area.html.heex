@@ -1,0 +1,83 @@
+<h1><%= gettext "My tickets" %></h1>
+<hr>
+<h3><%= gettext "Upcoming flights" %></h3>
+<%= if length(@tickets) > 0 do %>
+<p>
+  <%= gettext "You have purchased %{count} tickets for upcoming flights:", count: length(@tickets) %>
+</p>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th><%= gettext "Number" %></th>
+      <th><%= gettext "From" %></th>
+      <th><%= gettext "To" %></th>
+      <th><%= gettext "Date" %></th>
+      <th><%= gettext "Time" %></th>
+      <th><%= gettext "Price" %></th>  
+    </tr>
+  </thead>
+  <tbody>
+<%= for ticket <- @tickets do %>
+    <tr>
+      <td><%= ticket.flight.id%></td>
+      <td><%= ticket.flight.departure_airport.city.name%></td>
+      <td><%= ticket.flight.arrival_airport.city.name%></td>
+      <td><%= ticket.flight.departure_date %></td>
+      <td><%= ticket.flight.departure_time.hour %></td>
+      <td><%= ticket.flight.price %> €</td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+<p class="text-secondary"><%= gettext "Note: No refunds are available at this time." %></p> 
+<% else %>
+<p><%= gettext "You haven't purchased any tickets for upcoming flights" %></p>
+<% end %>
+
+<h3>
+  <%= gettext "Past flights" %>
+</h3>
+<%= if length(@past_tickets) > 0 do %>
+<p>
+  <%= gettext "Here are your %{count} past flights:", count: length(@past_tickets) %>
+</p>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th><%= gettext "Number" %></th>
+      <th><%= gettext "From" %></th>
+      <th><%= gettext "To" %></th>
+      <th><%= gettext "Date" %></th>
+      <th><%= gettext "Time" %></th>
+      <th><%= gettext "Price" %></th> 
+    </tr>
+  </thead>
+  <tbody>
+<%= for ticket <- @past_tickets do %>
+    <tr>
+      <td><%= ticket.flight.id%></td>
+      <td><%= ticket.flight.departure_airport.city.name%></td>
+      <td><%= ticket.flight.arrival_airport.city.name%></td>
+      <td><%= ticket.flight.departure_date %></td>
+      <td><%= ticket.flight.departure_time.hour %></td>
+      <td><%= ticket.flight.price %> €</td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+<% else %>
+<p>
+  <%= gettext "You have no past flights" %>
+</p>
+<% end %>
+<h1><%= gettext "My API key" %></h1>
+<hr>
+
+<%= if @current_user.api_key do %>
+  <p><%= @current_user.api_key %></p>
+  <a href="/generate-api-key" class="btn btn-warning"><i class="fa-solid fa-rotate"></i> <%= gettext "Generate new key" %></a>
+<% else %>
+<p><%= gettext "You don't have an API key yet." %></p>
+<a href="/generate-api-key" class="btn btn-primary"><i class="fa-solid fa-plus"></i> <%= gettext "Generate key" %></a>
+<% end %>
+

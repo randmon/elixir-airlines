@@ -1,0 +1,12 @@
+<a href="/admin/flights" class="btn btn-outline-secondary mb-3"><i class="fa-solid fa-angle-left"></i> <%= gettext "Back"%></a>
+
+<%= render "flight_info.html", Map.put(assigns, :flight, @flight) %>
+
+<%= link to: Routes.flight_path(@conn, :edit, @flight), class: "btn btn-primary" do %>
+    <i class="fa-solid fa-pencil-alt"></i> <%= gettext "Edit"%>
+<% end %>
+
+<%= link to: Routes.flight_path(@conn, :delete, @flight), 
+    method: :delete, data: [confirm: gettext("Are you sure you want to delete flight %{flightid} ?\nThis action cannot be undone!", flightid: @flight.id)], class: "btn btn-danger" do %>
+    <i class="fa-solid fa-trash"></i> <%= gettext "Delete" %>
+<% end %>

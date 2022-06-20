@@ -1,0 +1,23 @@
+<div class="mx-auto" style="width: 80vw;">
+<h1>Purchase ticket</h1>
+<p> From: <%= @flight.departure_airport.name %>, <%= @departure_city.name %>, <%= @departure_city.country.name %>
+<br> To: <%= @flight.arrival_airport.name %>, <%= @arrival_city.name %>, <%= @arrival_city.country.name %>
+<br> <%= @flight.departure_date %> at <%= @flight.departure_time %>
+<br> Price: <%= @flight.price %> €</p>
+
+<.form let={f} for={@changeset} action={Routes.flight_path(@conn, :confirm_purchase)}>
+    <%= if @changeset.action do %>
+        <div class="alert alert-danger">
+            <%= error_tag f, :flight_id %>
+            <%= error_tag f, :user_id %>
+        </div>
+    <% end %>
+    <%= hidden_input f, :flight_id, value: @flight.id %>
+    <%= hidden_input f, :user_id, value: @current_user.id %>
+
+    <div>
+        <%= link gettext("Cancel"), to: Routes.flight_path(@conn, :show_upcoming, @flight), class: "btn btn-secondary" %>
+        <button type="Submit" class="btn btn-success"><%= gettext "Confirm purchase" %></button>
+    </div>  
+</.form>
+</div>
