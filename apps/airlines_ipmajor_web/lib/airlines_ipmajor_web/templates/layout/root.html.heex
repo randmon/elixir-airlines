@@ -45,7 +45,7 @@
             <%= if @current_user do %>
               <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa-solid fa-user"></i> <%= @current_user.username %>
+                  <%= gravatar(@current_user.email) %> <%= @current_user.username %>
                   </a>
               
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
